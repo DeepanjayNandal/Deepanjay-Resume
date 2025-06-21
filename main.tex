@@ -1,0 +1,175 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.6in}
+\addtolength{\textwidth}{1.2in}
+\addtolength{\topmargin}{-0.95in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-5pt}\bfseries\large\raggedright
+}{}{0em}{}[\color{black}\titlerule \vspace{-4pt}]
+
+% Reduce list spacing
+\setlist[itemize]{itemsep=0.01pt, topsep=0pt, leftmargin=0.15in}
+
+\newcommand{\resumeItem}[1]{
+  \item\small{{#1}}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{#4} \\
+      \textit{\normalsize #3} & \normalsize #2 \\
+    \end{tabular*}\vspace{-3pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-3pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+    \end{tabular*}\vspace{-3pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}}
+
+\pdfgentounicode=1
+% \linespread{1.045}
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\fontsize{14pt}{16pt}\selectfont\textbf{Deepanjay Nandal}} \\ \vspace{2pt}
+    \normalsize +1 (602) 790-9401 $|$ \href{mailto:deepanjay.nandal12@gmail.com}{deepanjay.nandal12@gmail.com} $|$ 
+    \href{https://www.linkedin.com/in/deepanjay-nandal/}{linkedin.com/in/deepanjay} $|$
+    \href{https://github.com/DeepanjayNandal}{github.com/Deepanjay}
+\end{center}
+
+\vspace{-3pt}
+
+%-----------EDUCATION-----------
+\vspace{-9pt}
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Arizona State University}{Arizona, USA}
+    {Masters of Science in Computer Software Engineering}{August 2024 - May 2026}
+  \resumeSubheading
+    {Vellore Institute Of Technology}{Tamil Nadu, India}
+    {Bachelor of Technology in Information Technology}{July 2017 - July 2021}
+\resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+    \textbf{Programming Languages}{: Java, Python, C++, JavaScript, Dart, TypeScript, SQL, Bash} \\
+    \textbf{Mobile \& Web Development}{: Flutter, React, Next.js, Tailwind CSS} \\
+    \textbf{Backend Development}{: Java Servlets, JDBC, Flask, Node.js, Express.js, REST APIs, JWT Authentication} \\
+    \textbf{Security \& Reverse Engineering}{: Android Security, AOSP, Frida, Ghidra, ClusterFuzz, Assembly Analysis, Static/Dynamic Analysis} \\
+    \textbf{Testing \& Automation}{: AndroidJUnitRunner, JUnit, UIAutomator, Tradefed, memutils, Logging, Triage Reports} \\
+    \textbf{Tools \& Platforms}{: Git, Android Studio, ADB, IDA Pro, Visual Studio Code, IntelliJ, Eclipse, Postman, Xcode, Putty} \\
+    \textbf{Databases \& Data Tools}{: MongoDB, SQLite, Firebase, Pandas, NumPy, Scikit-learn, SPARQL} \\
+    \textbf{Cloud \& DevOps}{: Vercel, Microsoft Azure, Docker, GitHub Actions, CI/CD Fundamentals} \\
+    \textbf{Software Architecture}{: Clean Architecture, Repository Pattern, Provider Pattern, SOLID Principles} \\
+    \textbf{Additional}{: WebRTC, OAuth2.0, RBAC, Sentry, Secure Storage, Responsive UI Design}
+  }}
+\end{itemize}
+
+%-----------EXPERIENCE-----------
+\vspace{-9pt}
+\section{Experience}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+  {Ittiam Systems Pvt Ltd}{Bangalore, India}
+  {Senior Software Engineer}{March 2022 – June 2024}
+  \resumeItemListStart
+    \resumeItem{Spearheaded the development of 40+ Compatibility Test Suites (CTS) for Google’s Android Security Test Suite, integrating into AOSP and ensuring vulnerability patch validation.}
+    \resumeItem{Introduced reverse engineering workflows using Ghidra and Frida, increasing bug identification by 150\% and enabling dynamic inspection of previously inaccessible vulnerabilities.}
+    \resumeItem{Automated crash reproduction and triage workflows using ClusterFuzz and Python, reducing duplicate crash submissions and improving triage efficiency by 75\%.}
+    \resumeItem{Designed and implemented memutils for out-of-memory error detection, expanding test coverage and earning recognition with a “Best Employee” award.}
+    \resumeItem{Produced detailed triage reports with clear control flow and insights for over 50 bugs, expediting patch verification cycles.}
+    \resumeItem{Analyzed Assembly Code from OEMs (Lenovo, Samsung, Asus) as part of Google’s Build Test Suite to assess patch status and accelerate partner security updates.}
+  \resumeItemListEnd
+
+  \resumeSubheading
+  {Accenture}{Pune, India}
+  {Associate Application Developer}{November 2021 – March 2022}
+  \resumeItemListStart
+    \resumeItem{Completed Java training covering OOP, database connectivity, and concurrency using real-world simulations.}
+    \resumeItem{Built a login and access-control module using Java, Servlets, and JDBC during an Agile sprint.}
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+\vspace{-9pt}
+%-----------PROJECTS-----------
+\section{Projects}
+\resumeSubHeadingListStart
+
+\resumeProjectHeading
+  {\textbf{CaseTally – Cross-Platform Secure Communication Platform for Legal Use Cases}}{}
+  \resumeItemListStart
+    \resumeItem{Built secure real-time P2P video and chat using WebRTC with QR-based ECDH key exchange, XChaCha20 encryption, and offline-ready messaging.}
+    \resumeItem{Designed a signaling protocol enabling persistent sessions, peer reconnection, and offline caching with sync-on-reconnect.}
+    \resumeItem{Implemented role-based contact and session lifecycle control using the Repository Pattern with Provider, leveraging Clean Architecture and modular dependency injection for scalability and maintainability.}
+    \resumeItem{Developed backend with Flask and MongoDB, applying JWT authentication and encrypted client-side data handling using secure local storage.}
+    \resumeItem{Enabled runtime observability and real-time error tracking via Sentry, integrated with structured logs and crash reports.}
+    \resumeItem{\textbf{Skills}: Flutter, Dart, Flask, WebRTC, MongoDB, JWT, Sentry, Clean Architecture, Provider, Secure Storage, XChaCha20, ECDH}
+  \resumeItemListEnd
+
+
+\resumeProjectHeading
+  {\textbf{Nutritional Calculator Web App}}{}
+  \resumeItemListStart
+    \resumeItem{Designed full-stack app for real-time nutrition analysis via SPARQL-backed knowledge graph.}
+    \resumeItem{Leveraged semantic search and RDF mapping via Node.js backend with SPARQL endpoints.}
+    \resumeItem{Delivered responsive, low-latency UI with Next.js, Tailwind CSS, async APIs, and non-blocking data flows.}
+    \resumeItem{\textbf{Skills}: Node.js, Next.js, Tailwind CSS, SPARQL, Semantic Web, REST APIs, Vercel}
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\vspace{-9pt}
+
+\end{document}
